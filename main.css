@@ -1,0 +1,14 @@
+th {
+	background:grey;
+}
+
+tr {
+	text-align:center;
+}
+
+table {
+	border-collapse: collapse;
+	border:grey 1px solid;
+	margin:2px;
+}
+
