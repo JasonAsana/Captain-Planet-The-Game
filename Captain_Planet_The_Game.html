@@ -4,42 +4,78 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>Captain Planet: The Game</title>
+<!--CSS Link-->
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- adding jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<script type="text/javascript" src="javascript/main.js"></script>
 </head>
 
-<!--header section-->
 <body>
-<h1>Captain Planet: The Game!</h1>
-<p>Rated M for Mature</p>
-<hr />
-<button>Play Theme Song!</button>
-<br />
 
-<table>
-   <th>Superpowers - Change Sizes!</th>
- 	<tr>
-   		<td><button>Normal</button><button>Grow</button><button>Shrink</button></td>
-	</tr>
-</table>
-<br />
+<div id="wrapper">
+   <!--header section-->
+   <div id="header">
+      <h1>Captain Planet: The Game!</h1>
+      <p>Rated M for Mature</p>
+      <hr />
+      <button id="togglePlay"></button>
+      <button id="toggleMute"></button>
+      <br />
+   </div>
 
-<table>
-   <th>Superpowers - Invisibilty!</th>
- 	<tr>
-   		<td><button>Visible</button><button>Invisible</button></td>
-	</tr>
-</table>
-<br />
+   <section>
+      <div id ="controlSection">
+         <table>
+            <th>Superpowers - Change Sizes!</th>
+          	<tr>
+            		<td>
+                     <button class="fa fa-check-circle">Normal</button>
+                     <button class="fa fa-search-plus">Grow</button>
+                     <button class="fa fa-search-minus">Shrink</button>
+                  </td>
+         	</tr>
+         </table>
+         <br />
 
-<table>
-   <th>Move Controls</th>
- 	<tr>
-   		<td><button><span class="fa fa-arrow-up"></span></button></td>
-   		<td><button><span class="fa fa-arrow-left"></span></button><button><span class="fa fa-arrow-down"></span></button><button><span class="fa fa-arrow-right"></span></button></td>
-	</tr>
-</table>
+         <table>
+            <th>Superpowers - Invisibilty!</th>
+          	<tr>
+            	<td>
+                  <button class="fa fa-eye">Visible</button>
+                  <button class="fa fa-eye-slash">Invisible</button>
+               </td>
+         	</tr>
+         </table>
+         <br />
 
+         <table>
+            <th>Move Controls</th>
+          	<tr>
+            	<td><button class="fa fa-arrow-up"></button></td>
+            </tr>      
+            <tr>
+            	<td>
+                  <button class="fa fa-arrow-left"></button>
+                  <button class="fa fa-arrow-down"></button>
+                  <button class="fa fa-arrow-right"></button>
+               </td>
+         	</tr>
+            <tr>
+               <td>
+                  <button class="fa fa-comment"> Go Planet!</button>
+               </td>
+            </tr>
+         </table>
+      </div>
+
+      <div id="captainDiv">
+         <img id="captain" src="images/captainplanet.jpg">
+      </div>
+   </section>
+</div>
 </body>
 
 </html>

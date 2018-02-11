@@ -1,10 +1,82 @@
+body {
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	margin:0;
+}
+
 table {
 	border:solid 2px grey;
 	padding: 0;
 	margin:0;
 	border-collapse: collapse;
+	width: 100%;
 }
 
 th {
 	background: grey;
+}
+
+td {
+	text-align: center;
+	padding:5px;
+}
+
+#wrapper {
+	margin: 0 50px 50px 50px;
+}
+
+#header {
+	background:grey;
+	text-align: center;
+	margin-bottom:20px;
+	padding:20px;
+}
+
+/**audio***/
+#togglePlay {
+	background: url("../images/play.png") no-repeat;
+	background-size: contain;
+	width: 36px;
+	height: 30px;
+	border:none;
+	margin:0 10px 0 10px;
+}
+
+#toggleMute {
+	background: url("../images/volume.png") no-repeat;
+	background-size: contain;
+	width: 36px;
+	height: 30px;
+	border:none;
+	margin:0 10px 0 10px;
+}
+
+
+/**Captain Planet***/
+#captainDiv {
+	float:right;
+	width: 50%;
+	text-align: center;
+}
+
+
+/**Controls**/
+#controlSection {
+	float:left;
+	width:50%;
+}
+
+.fa-search-minus {
+	background: red;
+}
+
+.fa-search-plus {
+	background: blue;
+}
+
+.fa-eye-slash {
+	background: cyan;
 }
