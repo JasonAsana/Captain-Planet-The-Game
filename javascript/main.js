@@ -9,7 +9,7 @@ $(document).ready(function() {
 		$("#captain").animate({height: '100px'});
 	});
 
-	$(".fa-circle-check").click(function(){
+	$(".fa-check-circle").click(function(){
 		$("#captain").animate({height: '263px'});
 	});
 
